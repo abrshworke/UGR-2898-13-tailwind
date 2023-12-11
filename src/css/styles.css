@@ -1,0 +1,767 @@
+
+/* General styles */
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+      
+}
+
+
+
+/* Header Section */
+
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-image {
+  width: 70px;
+  margin-bottom: 10px;
+  align-items: self-start;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.header__nav-span {
+  margin: 5px 10px;
+}
+
+.header__nav-span a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+
+
+
+/* Main section */
+
+.main {
+  padding: 15px;
+}
+
+
+
+
+/* About Me Section */
+
+
+.main__main-aboutme {
+  text-align: center;
+  background-color: #3298db;
+  border-radius: 10px;
+  color: white;
+  margin: 20px auto; 
+  padding: 20px; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.main__image-aboutme img {
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+.main__text-aboutme {
+  font-size: 26px;
+  text-align: center; 
+}
+
+.main__text-aboutme h1 {
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hobbies Section */
+
+
+
+.hobbies__hobbies-c {
+  display: flex;
+  flex-wrap: wrap; 
+  background-color: #3498db;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  
+}
+
+.hobbies__hobbies-vid {
+  flex: 1;
+  
+}
+
+.hobbies__hobbies-vid video {
+  max-width: 65%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.hobbies__hobbies-subc {
+  flex: 1;
+  flex-direction: column;
+}
+
+.hobbies__hobbies-para {
+  flex: 1;
+  color: white;
+  
+}
+
+.hobbies__hobbies-img {
+  flex: 1;
+}
+
+.hobbies__hobbies-img img {
+  width: 70%; 
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* CV Section */
+
+
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: #3298db;
+  border-radius: 25px;
+}
+
+.cv__cv-image img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.cv__cvr {
+  font-size: 34px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* Education Section */
+
+
+
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #3498db;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.education__button-education {
+  font-size: 16px;
+  background-color: white;
+  color: #3298db;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.education__education-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.education__education-details p {
+  color: #fff;
+}
+
+.education__a {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: default;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  align-content: center;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Skill Section */
+
+
+
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #3298db;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill__technical-skills,
+.skill__soft-skill,
+.skill__Tool-and-Technology {
+  flex: 1;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.skill__button-tech,
+.skill__button-soft,
+.skill__button-tool {
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.skill__column {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill__column h3 {
+  font-size: 18px;
+}
+
+.skill__column ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.skill__column li {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+
+
+
+.footer {
+  background-color: #343;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  cursor: none;
+}
+
+.footer__socials a {
+  margin: 0 10px;
+}
+
+.footer__socials img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Menu icon for mobile design */
+
+
+
+
+.header__menu-icon {
+  cursor: pointer;
+  font-size: 36px;
+  justify-self: end;
+  color: white;
+  display: none; 
+}
+
+.header__menu-icon:before {
+  content: '\2261';
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__menu-icon:target + .header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+
+
+
+
+@media only screen and (max-width: 599px) {
+
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__nav-span {
+    display: none;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .header__nav {
+    display: none;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  
+
+  .header__menu-icon {
+    display: flex; 
+    margin-right: 10px; 
+  }
+
+  .header__menu-icon:target + .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .header__menu-icon:target + .header__nav span {
+    display: block;
+  } 
+
+  .main__main-aboutme {
+    flex-direction: row; 
+    text-align: center; 
+  }
+
+  .main__image-aboutme img {
+    margin-right: 0; 
+    margin-left: 20px;
+    height: 75vh;
+    width: 300vw;
+
+  }
+
+  .main__text-aboutme {
+    font-size: 13px;
+    text-align: left; 
+    margin-left: 40px;
+  }
+  
+  .main__text-aboutme h1 {
+    font-size: 30px; 
+  }
+
+  .hobbies__hobbies-para{
+    font-size: 10px;
+    
+    margin-top: 60px;
+
+  }
+  .hobbies__hobbies-c {
+    flex-direction: row;
+    
+  }
+  .hobbies__hobbies-vid{
+    height: 85vh;
+    width: 300vw;
+    margin-top: 40px;
+  }
+  .education{
+    height: 250vh;
+    
+  }
+  .cv{
+    height: 140vh;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Styles */
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .header__logo-image {
+    align-items: start;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header__nav-span {
+    margin: 10px;
+  }
+
+  .main__main-aboutme {
+    flex-direction: row;
+  }
+
+  .main__text-aboutme {
+    font-size: 20px;
+    text-align: left; 
+    margin-left: 30px;
+  }
+
+  .main__text-aboutme h1 {
+    font-size: 30px;
+  }
+  .main__image-aboutme img {
+    margin-right: 0; 
+    height: 85vh;
+    width: 400vw;
+
+  }
+
+  .skill {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skill__container {
+    flex-direction: row;
+    margin-right: 0; 
+    height: 85vh;
+    
+  }
+
+  .education__education-details p{
+    font-size: 20px;
+  }
+  .education__education-details h1{
+    font-size: 30px;
+  }
+
+  .hobbies__hobbies-para{
+    font-size: 12px;
+    margin-top: 70px;
+  }
+
+  .hobbies__hobbies-vid{
+    height: 85vh;
+    width: 300vw;
+    margin-top: 50px;
+
+  }
+  .education{
+    height: 120vh;
+  }
+  .cv{
+    height: 180vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles for Mobile portrait */
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header__nav-span {
+    margin: 15px;
+  }
+
+  
+  .main__main-aboutme {
+    flex-direction: row; 
+    text-align: center;
+  }
+
+  .main__image-aboutme img {
+    margin-right: 20px; 
+    
+  }
+
+  .skill {
+    
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .skill__container{
+    flex-direction: row;
+
+  }
+  
+  .education{
+    height:280vh;
+  }
+
+  .skill__container { 
+    height: 140vh;
+
+  
+  }
+  .hobbies__hobbies-vid{
+    height: 105vh;
+    
+  } 
+  .cv{
+    height: 350vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for desktop view */
+
+
+
+@media only screen and (min-width: 1025px) {
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main__main-aboutme {
+    flex-direction: row;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header__nav-span {
+    margin: 25px;
+  }
+  
+
+  
+
+  .main__text-aboutme {
+    text-align: left;
+    margin-left: 40px; 
+  }
+
+  .skill {
+    
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .skill__container{
+    flex-direction: row;
+
+  }
+  .hobbies__hobbies-c{
+    flex-direction: row;
+  }
+
+  .education__education-details p{
+    font-size: 20px;
+  }
+  .education__education-details h1{
+    font-size: 55px;
+  }
+  .hobbies__hobbies-para{
+    font-size: 20px;
+  }
+  .hobbies__hobbies-vid{
+    height: 100vh;
+    width: 300vw;
+    margin-top: 50px;
+
+  }
+  .education{
+    height: 80vh;
+
+  }
+
+  .skill__container { 
+    height: 80vh;
+
+  
+}
+.main__image-aboutme img {
+  margin-right: 0; 
+  height: 80vh;
+  width: 200vw;
+
+}
+
+
+}
