@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aboutme</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    
   </head>
-
+ 
   <body>
     <header class="header">
       <img class="header__logo-image" src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
@@ -28,16 +29,29 @@
   <main class="main">
     <div class="main__main-aboutme">
       <div class="main__image-aboutme">
-          <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\52 IMG_5179 s.JPG" alt="profile">
+          <img class="main__image-aboutme-img" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\52 IMG_5179 s.JPG" alt="profile">
       </div>
       <div class="main__text-aboutme">
-          <h1> Abreham  worke</h1>
+          <h1   class="main__text-aboutme-h1"> Abreham  worke</h1>
           <p>Hello, I'm Abreham Worke, a student at Addis Ababa University pursuing a degree in Software Engineering. As a junior web developer, I am passionate about creating innovative and user-friendly web solutions. My goal is to make a meaningful impact in the world of technology and contribute to the advancement of the web development landscape.
           </p>
-              </div>
-  </div>
-    
+          <button class="main__contact-link" onclick="toggleForm()">Contact Me</button>
 
+          <form class="main__form" id="contactForm" >
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone-number">phone-number:</label>
+              <input type="phone-number"  id="phone-number"  required>
+      
+              <button class="main__summit-button" type="button" onclick="submitForm()">Submit</button>
+          </form>
+          <div id="messageContainer"></div>  
+      </div>
+  </div>
   </main>
 
   <footer class="footer">
@@ -49,6 +63,33 @@
   </div>
 
   </footer>
-    
+
+  <script src="js/script.js"></script>
   </body>
   </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,4 +1,7 @@
 
+
+
+
 /* General styles */
 
 
@@ -9,9 +12,7 @@ body {
 }
 
 
-
 /* Header Section */
-
 
 .header {
   background-color: black;
@@ -20,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .header__logo-image {
@@ -45,8 +47,6 @@ body {
 }
 
 
-
-
 /* Main section */
 
 .main {
@@ -59,6 +59,11 @@ body {
 /* About Me Section */
 
 
+
+
+
+
+
 .main__main-aboutme {
   text-align: center;
   background-color: #3298db;
@@ -68,27 +73,89 @@ body {
   padding: 20px; 
   display: flex; 
   align-items: center;
-  justify-content: center;
-   
+  justify-content: center; 
 }
 
-.main__image-aboutme img {
+.main__image-aboutme-img {
   max-width: 100%; 
   height: auto;
   margin-bottom: 20px; 
+  cursor: pointer;
 }
+.main__image-aboutme-img:hover{
+  opacity: 0.7;
+}
+
 
 .main__text-aboutme {
   font-size: 26px;
   text-align: center; 
 }
 
-.main__text-aboutme h1 {
+.main__text-aboutme-h1 {
   font-size: 40px;
 }
 
 
+.main__contact-link{
+  display: inline-block;
+  background-color: white;
+  color:black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px auto;
+  
+}
 
+.main__contact-link:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-9px);
+}
+
+
+/* Hidden by default */
+
+
+.main__form {
+  display: none;
+  max-width: 200px;
+  margin: auto;
+}
+
+input{
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 370px;
+
+}
+#messageContainer {
+  margin-top: 20px;
+  color: green;
+  font-size: 23px;
+}
+.main__summit-button{
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.main__summit-button:hover{
+  opacity: 0.7;
+}
 
 
 
@@ -99,6 +166,9 @@ body {
 
 
 /* Hobbies Section */
+
+
+
 
 
 
@@ -120,7 +190,7 @@ body {
   
 }
 
-.hobbies__hobbies-vid video {
+.hobbies__hobbies-vid-video {
   max-width: 65%;
   height: auto;
   margin-bottom: 20px;
@@ -162,6 +232,8 @@ body {
 
 
 
+
+
 .cv {
   display: flex;
   flex-direction: column;
@@ -170,12 +242,16 @@ body {
   border-radius: 25px;
 }
 
-.cv__cv-image img {
+
+.cv__imgc {
   max-width: 80%;
   height: auto;
   margin-top: 20px;
   margin-right: 30px;
   margin-left: 40px;
+}
+.cv__imgc:hover{
+  opacity: 0.7;
 }
 
 .cv__cvr {
@@ -194,6 +270,8 @@ body {
 
 
 /* Education Section */
+
+
 
 
 
@@ -230,7 +308,7 @@ body {
   max-width: 100%;
 }
 
-.education__education-details p {
+.education__education-details-p {
   color: #fff;
 }
 
@@ -239,11 +317,18 @@ body {
   color: #fff;
   padding: 8px 16px;
   border: none;
-  cursor: default;
+  cursor: pointer;
   margin-right: 22px;
   margin-bottom: 10px;
   align-content: center;
   
+}
+.education__a:hover{
+  background-color: #fff;
+  color: #2ecc71;
+}
+.education__a:active{
+  opacity: 0.3;
 }
 
 
@@ -259,6 +344,8 @@ body {
 
 
 
+
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -267,6 +354,9 @@ body {
   background-color: #3298db;
   border-radius: 20px;
   margin: 20px;
+}
+.skill:hover{
+  opacity: 0.7;
 }
 
 .skill__container {
@@ -325,10 +415,12 @@ body {
 
 
 
+
 .footer {
   background-color: #343;
   padding: 10px;
   text-align: center;
+  margin: 0;
 }
 
 .footer__socials {
@@ -361,6 +453,7 @@ body {
 
 
 
+
 .header__menu-icon {
   cursor: pointer;
   font-size: 36px;
@@ -372,6 +465,7 @@ body {
 .header__menu-icon:before {
   content: '\2261';
 }
+
 
 .header__nav {
   display: none;
@@ -399,6 +493,8 @@ body {
 
 
 /* Mobile Styles */
+
+
 
 
 
@@ -446,22 +542,27 @@ body {
     text-align: center; 
   }
 
-  .main__image-aboutme img {
+  .main__image-aboutme-img {
     margin-right: 0; 
-    margin-left: 20px;
-    height: 75vh;
-    width: 300vw;
+    margin-left: 10px;
+    height: 40vh;
+    width: 390vw;
 
+  }
+  .main__contact-link{
+    width: 80px;
+    font-size: 10px;
+    padding: 5px;
   }
 
   .main__text-aboutme {
-    font-size: 13px;
+    font-size: 10px;
     text-align: left; 
     margin-left: 40px;
   }
   
-  .main__text-aboutme h1 {
-    font-size: 30px; 
+  .main__text-aboutme-h1 {
+    font-size: 19px; 
   }
 
   .hobbies__hobbies-para{
@@ -486,7 +587,36 @@ body {
   .cv{
     height: 140vh;
   }
+  .main__main-aboutme{
+    height: 100vh;
+  }
   
+.main__form{
+  flex-direction: column;
+}
+
+.main__form input {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.main__form label {
+  max-width: 100%;
+  
+}
+input{
+  font-size: 8px;
+  padding: 5px;
+  height: auto;
+  width: 130px;
+
+
+}
+.main__summit-button{
+  width: 100px;
+  font-size: 11px;
+}  
+
 
 }
 
@@ -505,6 +635,8 @@ body {
 
 
 /* Tablet Styles */
+
+
 
 
 
@@ -532,6 +664,11 @@ body {
   .main__main-aboutme {
     flex-direction: row;
   }
+  .main__contact-link{
+    width: 100px;
+    font-size: 13px;
+    padding: 5px;
+  }
 
   .main__text-aboutme {
     font-size: 20px;
@@ -539,10 +676,10 @@ body {
     margin-left: 30px;
   }
 
-  .main__text-aboutme h1 {
+  .main__text-aboutme-h1 {
     font-size: 30px;
   }
-  .main__image-aboutme img {
+  .main__image-aboutme-img {
     margin-right: 0; 
     height: 85vh;
     width: 400vw;
@@ -561,7 +698,7 @@ body {
     
   }
 
-  .education__education-details p{
+  .education__education-details-p{
     font-size: 20px;
   }
   .education__education-details h1{
@@ -580,11 +717,30 @@ body {
 
   }
   .education{
-    height: 120vh;
+    height: 130vh;
   }
   .cv{
     height: 180vh;
   }
+  .main__main-aboutme{
+    height: 120vh;
+  }
+
+  input{
+    font-size: 15px;
+   
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 200px;
+  
+
+}
+.main__summit-button{
+  width: 180px;
+  font-size: 18px;
+} 
+
 }
 
 
@@ -602,6 +758,8 @@ body {
 
 
 /* Responsive styles for Mobile portrait */
+
+
 
 
 
@@ -629,7 +787,7 @@ body {
     text-align: center;
   }
 
-  .main__image-aboutme img {
+  .main__image-aboutme-img {
     margin-right: 20px; 
     
   }
@@ -650,7 +808,7 @@ body {
   }
 
   .skill__container { 
-    height: 140vh;
+    height: 130vh;
 
   
   }
@@ -660,6 +818,10 @@ body {
   } 
   .cv{
     height: 350vh;
+  }
+
+  .main__main-aboutme{
+    height: 260vh;
   }
 }
 
@@ -688,6 +850,8 @@ body {
 
 
 
+
+
 @media only screen and (min-width: 1025px) {
 
   .header {
@@ -708,10 +872,7 @@ body {
   .header__nav-span {
     margin: 25px;
   }
-  
-
-  
-
+ 
   .main__text-aboutme {
     text-align: left;
     margin-left: 40px; 
@@ -731,7 +892,7 @@ body {
     flex-direction: row;
   }
 
-  .education__education-details p{
+  .education__education-details-p{
     font-size: 20px;
   }
   .education__education-details h1{
@@ -747,7 +908,7 @@ body {
 
   }
   .education{
-    height: 80vh;
+    height: 100vh;
 
   }
 
@@ -756,7 +917,7 @@ body {
 
   
 }
-.main__image-aboutme img {
+.main__image-aboutme-img {
   margin-right: 0; 
   height: 80vh;
   width: 200vw;
@@ -765,3 +926,27 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
