@@ -1,37 +1,14 @@
 
-function toggleForm() {
-  var form = document.getElementById("contactForm");
-  form.classList.toggle("is-hidden");
-}
 
 function toggleForm() {
   var form = document.getElementById('contactForm');
-  form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+  form.classList.toggle('is-hidden');
   document.getElementById('messageContainer').innerHTML = '';
 }
 
-function submitForm() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var phoneNumber = document.getElementById('phone-number').value;
 
-  if (name === '' || email === '' || phoneNumber === '') {
-    alert('Please fill in all fields.');
-    return;
-  }
-
-  var submissionMessage = 'Submitted Information:\n\nName: ' + name + '\nEmail: ' + email + '\nPhone Number: ' + phoneNumber;
-  alert(submissionMessage);
-
-  var thankYouMessage = 'your form commpletly summited, ' + name  + ' ' + ' ,i will be calling you!';
-  document.getElementById('messageContainer').innerHTML = thankYouMessage;
-
-  var form = document.getElementById('contactForm');
-  form.style.display = 'none';
-  document.getElementById('contactForm').reset();
-}
 document.addEventListener("DOMContentLoaded", function () {
-  var educationButtons = document.querySelectorAll(".education__a");
+  var educationButtons = document.querySelectorAll(".education__button");
 
   educationButtons.forEach(function (button) {
     button.addEventListener("click", function () {
@@ -53,28 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var menuButton = document.getElementById("menu");
+  var navMenu = document.getElementById("navMenu");
 
+ 
+  menuButton.addEventListener("click", function () {
+    navMenu.classList.toggle("is-active");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
+    
+    var navbarItems = document.querySelectorAll(".navbar-item");
+    navbarItems.forEach(function (item) {
+      item.classList.toggle("has-text-white", navMenu.classList.contains("is-active"));
+    });
+  });
+});

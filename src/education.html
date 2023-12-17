@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,82 +12,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__logo-image" src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="Logo">
-     
-    <a href="#menu" class="header__menu-icon" id="menu"></a>
-
-    <nav class="header__nav">
-      <span  class="header__nav-span"><a href="aboutme.html">About Me</a></span>
-      <span class="header__nav-span"><a href="skill.html">Skill</a></span>
-      <span class="header__nav-span"><a href="education.html">Education</a></span>
-      <span class="header__nav-span"><a href="cv.html">CV/Resume</a></span>
-      <span class="header__nav-span"><a href="hobbies.html">Hobbies</a></span>
-    </nav>
-  </header>
-
-  <main class="education">
-    <button class="education__button-education">Education</button>
-
-    <section class="education__education-entry">
-      <div class="education__education-details">
-        <h2 class="education__eduk">Education at Addis Ababa University</h2>
-        <p class="education__education-details-p">
-          In my educational journey at Addis Ababa University, I've had the privilege of exploring the intricate balance between science, art, and philosophy within the realm of software engineering. The courses in my program have not only delved into the technical aspects of coding and system design but also emphasized the importance of creativity and user-centric design. This fusion of science and art is particularly evident in web development, where coding is akin to crafting a digital masterpiece. I've come to appreciate that the artistry lies not only in writing efficient code but also in creating an engaging user experience that seamlessly blends aesthetics with functionality.
-
-            Moreover, philosophy plays a crucial role in shaping my approach as a junior web developer. The ethical considerations and critical thinking fostered by philosophical studies are essential in navigating the complexities of the digital landscape. Questions about user privacy, accessibility, and the societal impact of technology require a thoughtful and principled approach. Thus, my education has not only equipped me with technical skills but also instilled a holistic perspective that recognizes the interconnectedness of science, art, and philosophy in the ever-evolving field of software engineering.
-             </p>
-        <div>
-          <h3 class="education__kj">If you have an interest to learn following courses <br>please click the button and check it !</h3>
-          <div class="education__kk">
-            <button class="education__a">Artificial Intelligence</button>
-            <button class="education__a">Web Development</button>
-            <button class="education__a">Programming</button>
-            <button class="education__a">Cyber Security</button>
+  <header class="hero is-black">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <figure class="image is-64x64">
+              <img class="header__logo-image" src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="Logo">
+            </figure>
+          </div>
+          <div class="column is-three-quarters">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="#menu" id="menu"></a>
+                <a role="button" class="navbar-burger burger is-hidden-desktop  navbar-burger burger is-hidden-table" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+              <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                  <span class="navbar-item has-text-white"><a href="aboutme.html">About Me</a></span>
+                  <span class="navbar-item has-text-white"><a href="skill.html">Skill</a></span>
+                  <span class="navbar-item has-text-white"><a href="education.html">Education</a></span>
+                  <span class="navbar-item has-text-white"><a href="cv.html">CV/Resume</a></span>
+                  <span class="navbar-item has-text-white"><a href="hobbies.html">Hobbies</a></span>
+                </div>  
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
+
+  <main class="section  hero is-fullheight  has-background-info">
+    <div class="container education">
+      <button class="button is-info is-fullwidth is-size-5">Education</button>
+
+      <section class="education-entry">
+        <div class="education-details">
+          <h2 class="title is-4 education-title">Education at Addis Ababa University</h2>
+          <p class="title is-6 education-details">
+            In my educational journey at Addis Ababa University, I've had the privilege of exploring the intricate balance between science, art, and philosophy within the realm of software engineering. The courses in my program have not only delved into the technical aspects of coding and system design but also emphasized the importance of creativity and user-centric design. This fusion of science and art is particularly evident in web development, where coding is akin to crafting a digital masterpiece. I've come to appreciate that the artistry lies not only in writing efficient code but also in creating an engaging user experience that seamlessly blends aesthetics with functionality.
+            Moreover, philosophy plays a crucial role in shaping my approach as a junior web developer. The ethical considerations and critical thinking fostered by philosophical studies are essential in navigating the complexities of the digital landscape. Questions about user privacy, accessibility, and the societal impact of technology require a thoughtful and principled approach. Thus, my education has not only equipped me with technical skills but also instilled a holistic perspective that recognizes the interconnectedness of science, art, and philosophy in the ever-evolving field of software engineering.
+             
+          </p>
+          <div>
+            <h3 class="title is-5 education-interest">If you have an interest to learn following courses<br>please click the button and check it !</h3>
+            <div class="buttons education-buttons">
+              <button class="button is-success education__button">Artificial Intelligence</button>
+              <button class="button is-success education__button">Web Development</button>
+              <button class="button is-success education__button">Programming</button>
+              <button class="button is-success education__button">Cyber Security</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="footer__socials">
-      <a href="http://faceo.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="Facebook icon"></a>
-      <a href="http://insam.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp" alt="Instagram icon"></a>
-      <a href="http://tram.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="Telegram icon"></a>
+  <footer class="footer has-background-dark">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column">
+                <div class="footer__socials has-text-centered is-flex is-justify-content-flex-end">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-narrow">
+                            <a href="http://faok.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png"
+                                    alt="Facebook icon" class="image is-16x16"></a>
+                        </div>
+                        <div class="column is-narrow">
+                            <a href="http://instaam.com/"><img
+                                    src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp"
+                                    alt="Instagram icon" class="image is-16x16"></a>
+                        </div>
+                        <div class="column is-narrow">
+                            <a href="http://teleram.com/"><img
+                                    src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png"
+                                    alt="Telegram icon" class="image is-16x16"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
