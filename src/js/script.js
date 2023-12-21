@@ -1,47 +1,63 @@
+document.addEventListener('DOMContentLoaded', function () {
+  
+  var menuLabel = document.querySelector('label[for="menu"]');
+  var menuCheckbox = document.getElementById('menu');
+  var navMenu = document.querySelector('nav');
 
-
-function toggleForm() {
-  var form = document.getElementById('contactForm');
-  form.classList.toggle('is-hidden');
-  document.getElementById('messageContainer').innerHTML = '';
-}
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  var educationButtons = document.querySelectorAll(".education__button");
-
-  educationButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var buttonText = button.textContent.trim().toLowerCase();
-
-      var buttonToUrlMap = {
-        "artificial intelligence": "https://www.coursera.org/courses?query=artificial%20intelligence",
-        "web development": "https://www.mygreatlearning.com/web-development/free-courses",
-        "programming": "https://learnprogramming.online/",
-        "cyber security": "https://www.coursera.org/courses?query=cybersecurity",
-      };
-
-      if (buttonToUrlMap.hasOwnProperty(buttonText)) {
-        
-        window.open(buttonToUrlMap[buttonText], '_blank', 'width=900,height=600');
-      } else {
-        console.error("Unknown button clicked:", buttonText);
-      }
-    });
+  
+  menuLabel.addEventListener('click', function () {
+      
+      navMenu.classList.toggle('hidden');
   });
 });
+
+function toggleForm() {
+  var form = document.getElementById("contactForm");
+  form.classList.toggle("hidden");
+}
+
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phoneNumber = document.getElementById('phone-number').value;
+
+  if (name === '' || email === '' || phoneNumber === '') {
+      alert('Please fill in all fields.');
+      return;
+  }
+
+  var submissionMessage = 'Submitted Information:\n\nName: ' + name + '\nEmail: ' + email + '\nPhone Number: ' + phoneNumber;
+  alert(submissionMessage);
+
+  var thankYouMessage = 'Your form completely submitted, ' + name + ', I will be calling you!';
+  document.getElementById('messageContainer').innerHTML = thankYouMessage;
+
+  var form = document.getElementById('contactForm');
+  form.classList.add('hidden');
+  form.reset();
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  var menuButton = document.getElementById("menu");
-  var navMenu = document.getElementById("navMenu");
+  var educationButtons = document.querySelectorAll(".education__a");
 
- 
-  menuButton.addEventListener("click", function () {
-    navMenu.classList.toggle("is-active");
+  educationButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+          var buttonText = button.textContent.trim().toLowerCase();
 
-    
-    var navbarItems = document.querySelectorAll(".navbar-item");
-    navbarItems.forEach(function (item) {
-      item.classList.toggle("has-text-white", navMenu.classList.contains("is-active"));
-    });
+          var buttonToUrlMap = {
+              "artificial intelligence": "https://www.coursera.org/courses?query=artificial%20intelligence",
+              "web development": "https://www.mygreatlearning.com/web-development/free-courses",
+              "programming": "https://learnprogramming.online/",
+              "cyber security": "https://www.coursera.org/courses?query=cybersecurity",
+          };
+
+          if (buttonToUrlMap.hasOwnProperty(buttonText)) {
+              
+              window.open(buttonToUrlMap[buttonText], '_blank', 'width=900,height=600');
+          } else {
+              
+              console.error("Unknown button clicked:", buttonText);
+          }
+      });
   });
 });

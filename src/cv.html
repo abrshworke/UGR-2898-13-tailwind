@@ -1,97 +1,52 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
-<body>
-  <header class="hero is-black">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <figure class="image is-64x64">
-              <img class="header__logo-image" src="images/831a3056a13e05fdc84c483a26c6ff16.jpg" alt="Logo">
-            </figure>
-          </div>
-          <div class="column is-three-quarters">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-              <div class="navbar-brand">
-                <a class="navbar-item" href="#menu" id="menu"></a>
-                <a role="button" class="navbar-burger burger is-hidden-desktop  navbar-burger burger is-hidden-table" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </a>
-              </div>
-              <div id="navMenu" class="navbar-menu">
-                <div class="navbar-end">
-                  <span class="navbar-item has-text-white"><a href="aboutme.html">About Me</a></span>
-                  <span class="navbar-item has-text-white"><a href="skill.html">Skill</a></span>
-                  <span class="navbar-item has-text-white"><a href="education.html">Education</a></span>
-                  <span class="navbar-item has-text-white"><a href="cv.html">CV/Resume</a></span>
-                  <span class="navbar-item has-text-white"><a href="hobbies.html">Hobbies</a></span>
-                </div>  
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<body class="font-roboto">
 
-  <main class="section   hero is-fullheight  has-background-info">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h2 class="title is-4 has-text-centered">Resume/CV</h2>
-          <figure class="image is-4by4">
-            <img class="cv__imgc" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Abreham_Worke_Resume_13-11-2023-00-53-59_page-0001.jpg"
-              alt="CV Page">
-          </figure>
-        </div>
+    <header class="bg-black text-white p-4 md:p-10 flex justify-between items-center">
+        <img class="w-12 md:w-20" src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
+
+        <label for="menu" class="text-white text-3xl md:hidden cursor-pointer">&#8801;</label>
+        <input type="checkbox" id="menu" class="hidden">
+
+        <nav class="flex flex-col md:flex-row items-center md:items-end hidden md:flex  space-x-2 md:space-x-5">
+            <span class="mr-2"><a href="aboutme.html">About Me</a></span>
+            <span class="mr-2"><a href="skill.html">Skill</a></span>
+            <span class="mr-2"><a href="education.html">Education</a></span>
+            <span class="mr-2"><a href="cv.html">CV/Resume</a></span>
+            <span class="mr-2"><a href="hobbies.html">Hobbies</a></span>
+        </nav>
+    </header>
+
+
+    <main class="cv flex flex-col items-center justify-center bg-blue-500 rounded text-white m-5 min-h-screen">
+      <div class="cv__cv-image mb-10 mr-10">
+          <h2 class="cv__cvr text-3xl text-center md:text-4xl lg:text-5xl mb-6">Resume/CV</h2>
+          <img class="cv__imgc w-full  md:max-w-3xl h-auto ml-5  md:mb-0 cursor-pointer hover:opacity-70" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Abreham_Worke_Resume_13-11-2023-00-53-59_page-0001.jpg" alt="CV Page">
       </div>
-    </div>
   </main>
 
-  <footer class="footer has-background-dark">
-    <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column">
-                <div class="footer__socials has-text-centered is-flex is-justify-content-flex-end">
-                    <div class="columns is-mobile is-multiline">
-                        <div class="column is-narrow">
-                            <a href="http://faok.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png"
-                                    alt="Facebook icon" class="image is-16x16"></a>
-                        </div>
-                        <div class="column is-narrow">
-                            <a href="http://instaam.com/"><img
-                                    src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp"
-                                    alt="Instagram icon" class="image is-16x16"></a>
-                        </div>
-                        <div class="column is-narrow">
-                            <a href="http://teleram.com/"><img
-                                    src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png"
-                                    alt="Telegram icon" class="image is-16x16"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+        
 
-<script src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+  
 
+
+
+    <footer class="bg-gray-900 p-10 text-center text-white">
+      <div class="flex justify-end  cursor-none">
+        <a href="http://facek.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="facebook icon" class="w-8 h-auto mr-2"></a>
+        <a href="http://inaram.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp" alt="instagram icon" class="w-8 h-auto mr-2"></a>
+        <a href="http://gam.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="twitter icon" class="w-8 h-auto"></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
-
